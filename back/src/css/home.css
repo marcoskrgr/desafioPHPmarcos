@@ -1,0 +1,207 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
+    list-style: none;  
+    text-decoration: none; 
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.3rem;
+    align-items: center;
+    background-color: #6A65FE;
+}
+
+header nav ul li {
+    padding-left: 2%;
+}
+
+header nav ul #title-suite {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding-top: 3%;
+    margin: 3%;
+    width: 94%;
+    max-height: 90%;
+}
+
+form.home {
+    width: 40%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form.home #home-select-product {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border-color: #d9d9d96e;
+    background-color: #d9d9d96e;
+    font-size: 70%;
+    padding-left: 1%;
+}
+
+form.home .home-inputs {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-top: 5px;
+    gap: 2px;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+form.home #home-input-amount {
+    width: 50%;
+    font-size: 70%;
+    height: 30px;
+    padding-left: 1%;
+    border-radius: 4px;
+    border-color: #d9d9d900;
+    background-color: #d9d9d96e;
+    
+}
+
+form.home #home-input-tax {
+    width: 25%;
+    height: 30px;
+    font-size: 70%;
+    padding-left: 1%;
+    border-radius: 4px;
+    border-color: #d9d9d900;
+    background-color: #d9d9d96e;
+}
+
+form.home #home-input-unit {
+    width: 25%;
+    height: 30px;
+    font-size: 70%;
+    padding-left: 1%;
+    border-radius: 4px;
+    border-color: #d9d9d900;
+    background-color: #d9d9d96e;
+}
+
+form.home #home-input-submit {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #6A65FE;
+    font-size: 70%;
+    align-items: center;
+    color: white;
+    border: 0;
+}
+
+.linha {
+    width: 0.1px;
+    background-color: #000000;
+    max-height: 100%;
+}
+
+form.carrinho {
+    width: 53%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.carrinho-table {
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-style: hidden hidden solid hidden;
+    border-width: .5px;
+}
+
+.carrinho-table tbody, th{
+    height: 35px;
+    vertical-align: top;
+    border: 1px solid black;
+    
+}
+
+.carrinho-table td {
+    max-width: 350px;
+    height: 35px;
+    vertical-align: top;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+
+.total-tax {
+    width: 25%;
+    font-size: .7em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+input#carrinho-tax, input#carrinho-total {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.carrinho-tax label, input {
+    background-color: white;
+    
+}
+
+.carrinho-total label, input {
+    background-color: white;
+    width: 100px;
+    
+}
+
+.carrinho-cancel-finish {
+    width: 50%;
+    height: 70px;
+}
+
+#carrinho-finish {
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    box-shadow: 0 0 0 0;
+    background-color: #6A65FE;
+    font-size: 1rem;
+    border: 0;
+}
+
+#carrinho-cancel{
+    width: 100px;
+    height: 35px;
+    box-shadow: 0 0 0 0;
+    background-color: #ccc;
+    font-size: 1rem;
+    border: 0;
+}
+
+td{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

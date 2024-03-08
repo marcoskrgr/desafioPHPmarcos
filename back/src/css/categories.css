@@ -1,0 +1,141 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
+    list-style: none;  
+    text-decoration: none; 
+    color: #000000;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+header nav ul {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.3rem;
+    align-items: center;
+    background-color: #6A65FE;
+}
+
+header nav ul li {
+    padding-left: 2%;
+}
+
+header nav ul #title-suite {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding-top: 3%;
+    margin: 3%;
+    width: 94%;
+    max-height: 90%;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+form.category
+{
+    width: 40%;
+    max-height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px 10px;
+}
+
+form.category .category-inputs {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-top: 5px;
+    gap: 2px;
+    justify-content: center;
+}
+
+form.category #category-name {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border-color: #d9d9d900;
+    background-color: #d9d9d96e;
+    font-size: 70%;
+    padding-left: 1%;
+}
+
+
+form.category #category-tax {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border-color: #d9d9d900;
+    background-color: #d9d9d96e;
+    font-size: 70%;
+    padding-left: 1%;
+    
+}
+
+
+form.category #category-add {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #6A65FE;
+    font-size: 70%;
+    align-items: center;
+    border: 0;
+    color: white;
+}
+
+
+.linha {
+    width: 0.1px;
+    background-color: #000000;
+    max-height: 100%;
+}
+
+form.carrinho {
+    width: 53%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carrinho-table {
+    max-width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-style: hidden hidden solid hidden;
+    border-width: .5px;
+
+}
+
+.carrinho-table tbody, th{
+    max-width: 300px;
+    height: 35px;
+    vertical-align: top;
+    border: 1px solid black;
+    
+}
+
+.carrinho-table tbody, td {
+    max-width: 350px;
+    height: 35px;
+    vertical-align: top;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+td{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
