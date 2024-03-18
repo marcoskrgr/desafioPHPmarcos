@@ -1,42 +1,3 @@
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box; 
-    list-style: none;  
-    text-decoration: none; 
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-}
-
-header nav ul {
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 1.3rem;
-    align-items: center;
-    background-color: #6A65FE;
-}
-
-header nav ul li {
-    padding-left: 2%;
-}
-
-header nav ul #title-suite {
-    font-size: 40px;
-}
-
-main {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    padding-top: 3%;
-    margin: 3%;
-    width: 94%;
-    max-height: 700px;
-}
-
-
 input::placeholder {
     color: rgb(0, 0, 0);
 }
@@ -62,28 +23,29 @@ form.carrinhoTable {
     flex-direction: column;
 }
 
-#carrinho-table {
+.carrinhoTable {
     border-collapse: collapse;
     text-align: center;
     border-style: hidden;
 }
 
 
-#carrinho-details {
+.carrinhoDetails {
     max-height: 100vh;
     border-collapse: collapse;
     text-align: center;
     border-style: hidden;
+    gap: 20px;
 }
 
-.carrinho-table tbody, th{
+.carrinhoTable tbody, th{
     max-width: 400px;
     height: 35px;
     vertical-align: top;
     border: 1px solid black;
 }
 
-.carrinho-table tbody, td {
+.carrinhoTable tbody, td {
     max-width: 350px;
     height: 35px;
     vertical-align: top;
@@ -91,7 +53,7 @@ form.carrinhoTable {
     font-size: 1rem;
 }
 
-select#details {
+select.details {
     width: 100%;
     height: 30px;
     border-radius: 4px;
@@ -99,6 +61,10 @@ select#details {
     background-color: #d9d9d96e;
     font-size: 70%;
     padding-left: 1%;
+}
+
+input.details {
+    width: 100%;
 }
 
 td{

@@ -1,0 +1,10 @@
+.inputSubmit {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #6A65FE;
+    font-size: 70%;
+    align-items: center;
+    color: white;
+    border: 0;
+}

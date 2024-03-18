@@ -1,46 +1,8 @@
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box; 
-    list-style: none;  
-    text-decoration: none; 
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-}
-
-header nav ul {
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 1.3rem;
-    align-items: center;
-    background-color: #6A65FE;
-}
-
-header nav ul li {
-    padding-left: 2%;
-}
-
-header nav ul #title-suite {
-    font-size: 40px;
-}
-
-main {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    padding-top: 3%;
-    margin: 3%;
-    width: 94%;
-    max-height: 90%;
-}
-
 input::placeholder {
     color: rgb(0, 0, 0);
-  }
+}
 
-form.product
+form.category
 {
     width: 40%;
     max-height: 25%;
@@ -50,7 +12,7 @@ form.product
     gap: 10px 10px;
 }
 
-form.product .product-inputs {
+form.category .categoryInputs {
     width: 100%;
     height: 30px;
     display: flex;
@@ -59,7 +21,7 @@ form.product .product-inputs {
     justify-content: center;
 }
 
-form.product #product-product {
+form.category .categoryName {
     width: 100%;
     height: 30px;
     border-radius: 4px;
@@ -70,28 +32,19 @@ form.product #product-product {
 }
 
 
-form.product #product-amount {
-    width: 50%;
-    font-size: 70%;
+form.category .categoryTax {
+    width: 100%;
     height: 30px;
-    padding-left: 1%;
     border-radius: 4px;
     border-color: #d9d9d900;
     background-color: #d9d9d96e;
+    font-size: 70%;
+    padding-left: 1%;
     
 }
 
-form.product #product-unit {
-    width: 25%;
-    height: 30px;
-    font-size: 70%;
-    padding-left: 1%;
-    border-radius: 4px;
-    border-color: #d9d9d900;
-    background-color: #d9d9d96e;
-}
 
-form.product #product-add {
+form.category .categoryAdd {
     width: 100%;
     height: 30px;
     border-radius: 4px;
@@ -102,15 +55,6 @@ form.product #product-add {
     color: white;
 }
 
-form.product #product-category {
-    width: 100%;
-    height: 30px;
-    border-radius: 4px;
-    border-color: #d9d9d96e;
-    background-color: #d9d9d96e;
-    font-size: 70%;
-    padding-left: 1%;
-}
 
 .linha {
     width: 0.1px;
@@ -120,39 +64,35 @@ form.product #product-category {
 
 form.carrinho {
     width: 53%;
-    max-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#carrinho-table {
+.carrinhoTable {
     max-width: 100%;
     border-collapse: collapse;
     text-align: center;
     border-style: hidden hidden solid hidden;
     border-width: .5px;
-    position: relative;
+
 }
 
-.carrinho-table tbody, th{
-    max-width: 35px;
+.carrinhoTable tbody, th{
+    max-width: 300px;
     height: 35px;
     vertical-align: top;
     border: 1px solid black;
     
 }
 
-.carrinho-table tbody, td {
-    max-width: 35px;
+.carrinhoTable tbody, td {
+    max-width: 350px;
     height: 35px;
     vertical-align: top;
     border: 1px solid black;
     font-size: 1rem;
-}
-
-.carrinho-table tbody td {
-    max-width: 40px;
 }
 
 td{
@@ -160,4 +100,3 @@ td{
     overflow:hidden;
     text-overflow:ellipsis;
 }
-
